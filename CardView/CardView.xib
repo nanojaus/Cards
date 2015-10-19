@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardView" customModule="CardView" customModuleProvider="target">
+            <connections>
+                <outlet property="aCardView" destination="5M8-2S-hfW" id="LTv-bq-aia"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="oFv-md-b9I"/>
+                <outlet property="scroll" destination="Iuy-8N-F2j" id="kid-0f-5gl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="488"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iuy-8N-F2j">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="220" id="gBb-dc-pH3"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="220" id="yDe-m7-fNY"/>
+                    </constraints>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5M8-2S-hfW" customClass="Card" customModule="CardView" customModuleProvider="target">
+                    <rect key="frame" x="117.5" y="308" width="140" height="220"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.42299330210000002" green="0.70496122660000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="4CX-9m-HC7"/>
+                        <constraint firstAttribute="height" constant="220" id="I1n-M1-C7L"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Iuy-8N-F2j" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Cee-Mh-TDU"/>
+                <constraint firstAttribute="bottom" secondItem="5M8-2S-hfW" secondAttribute="bottom" constant="-40" id="DKw-we-1Kv"/>
+                <constraint firstItem="5M8-2S-hfW" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="SVr-Bk-ecp"/>
+                <constraint firstItem="Iuy-8N-F2j" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jlE-RX-B9G"/>
+                <constraint firstAttribute="trailing" secondItem="Iuy-8N-F2j" secondAttribute="trailing" id="zdd-fn-9pU"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="304.5" y="423"/>
+        </view>
+    </objects>
+</document>
