@@ -85,6 +85,12 @@ class CardView: UIView {
     
     private func indexForItemAtPoint(point: CGPoint)->Int{
         let x = scroll.contentOffset.x + point.x
+        
+        let offsetx = Int(x/cardW) * Int(cardW) - Int(x)
+        if offsetx < Int(cardW/2){
+            return Int(x/cardW)-1
+        }
+        
         return Int(x/cardW)
     }
     
